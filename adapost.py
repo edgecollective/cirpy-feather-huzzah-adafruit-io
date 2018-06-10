@@ -5,6 +5,7 @@ url='https://io.adafruit.com/api/v2/donblair/feeds/goof-test/data.json'
 #json=dict(foo='13.2')
 #json=dict(foo='13.2)
 
-def post(json):url,headers=headers,json=json)
+def post(json):
+    r=urequests.post(url,json=json,headers=headers)
     return r
 
